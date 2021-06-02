@@ -1,7 +1,7 @@
 
 var input_variables="";
-var num1;
-var num2;
+var num1="";
+var num2="";
 var op;
 
 //  function to take input values from a button 
