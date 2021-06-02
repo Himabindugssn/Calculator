@@ -7,7 +7,7 @@ var op;
 //  function to take input values from a button 
 function take_input(val)
 {
-    if(val==='+' or val==='-' or val==='*' or val==='/'){
+    if(val=='+' || val=='-' || val=='*' || val=='/'){
        num1=Number(input_variables);
        op=val;
     }
