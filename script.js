@@ -14,7 +14,7 @@ function take_input(val)
 function calculate(num1,num2,op){
     switch(op){
         case '+':
-            return parseInt(num1)+parseInt(num2);
+            return +num1 + +num2;
             break;
         case '-':
             return num1-num2;
