@@ -1,11 +1,11 @@
 
 //array
-var input_variables=[];
+var input_variables="";
 
 //  function to take input values from a button 
 function take_input(val)
 {
-    input_variables.push(val);
+    input_variables+=val;
     console.log(val);
     document.getElementById('show').innerText+=" "+val;
 }
@@ -52,7 +52,7 @@ function refresh(){
 }
 
 function remove(){
-    input_variables.pop();
+    input_variables.slice(0,-1);
     let txt = document.getElementById("show").innerText
     document.getElementById("show").innerText= txt.slice(0,-1);
 
