@@ -3,7 +3,7 @@ var input_variables="";
 var num1;
 var num2;
 var op;
-bool changed=false;
+changed=false;
 
 //  function to take input values from a button 
 function take_input(val)
@@ -12,13 +12,12 @@ function take_input(val)
         if(changed==false){
             num1=Number(input_variables);
             op=val;
+            changed=true;
         }
         else{
              num2=Number(input_variables);
         }
-        changed=true;
         input_variables="";
-        
     }
     else{
         input_variables+=val;
