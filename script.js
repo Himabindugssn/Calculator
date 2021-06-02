@@ -15,7 +15,7 @@ function take_input(val)
         num2+=val;
     }
     input_variables+=val;
-    document.getElementById('show').innerText+=val;
+    document.getElementById('show').innerText=input_variables;
 }
 
 
