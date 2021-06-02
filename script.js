@@ -3,25 +3,18 @@ var input_variables="";
 var num1;
 var num2;
 var op;
-changed=false;
 
 //  function to take input values from a button 
 function take_input(val)
 {
     if(val==='+' or val==='-' or val==='*' or val==='/'){
-        if(changed==false){
-            num1=Number(input_variables);
-            op=val;
-            changed=true;
-        }
-        else{
-             num2=Number(input_variables);
-        }
-        input_variables="";
+       num1=Number(input_variables);
+       op=val;
     }
     else{
-        input_variables+=val;
+        num2+=val;
     }
+    input_variables+=val;
     document.getElementById('show').innerText+=val;
 }
 
