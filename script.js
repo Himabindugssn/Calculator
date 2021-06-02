@@ -10,9 +10,12 @@ function take_input(val)
     if(val=='+' || val=='-' || val=='*' || val=='/'){
        num1=Number(input_variables);
        op=val;
+       console.log(op);
+       console.log(num1);
     }
     else{
         num2+=val;
+        console.log(num2);
     }
     input_variables+=val;
     document.getElementById('show').innerText=input_variables;
