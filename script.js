@@ -1,12 +1,20 @@
 
-//array
 var input_variables="";
+var num1=a;
+var num2=b;
+var op;
+var input_variables="";
+
 
 //  function to take input values from a button 
 function take_input(val)
 {
     input_variables+=val;
-    console.log(val);
+    if(val==='+' or val==='-' or val==='*' or val==='/'){
+        num1==a?num1=input_variables:num2=input_variables;
+        input_variables="";
+        op=val;
+    }
     document.getElementById('show').innerText+=" "+val;
 }
 
@@ -35,11 +43,7 @@ function calculate(num1,num2,op){
 }
 
 
-
 function result(){
-    num1=input_variables[0];
-    op=input_variables[1];
-    num2=input_variables[2];
     console.log(calculate(num1,num2,op));
     document.getElementById("output").innerText=calculate(num1,num2,op);
 }
