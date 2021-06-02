@@ -9,11 +9,13 @@ var input_variables="";
 //  function to take input values from a button 
 function take_input(val)
 {
-    input_variables+=val;
     if(val==='+' or val==='-' or val==='*' or val==='/'){
         num1==a?num1=input_variables:num2=input_variables;
         input_variables="";
         op=val;
+    }
+    else{
+        input_variables+=val;
     }
     document.getElementById('show').innerText+=" "+val;
 }
