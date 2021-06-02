@@ -14,7 +14,7 @@ function take_input(val)
 function calculate(num1,num2,op){
     switch(op){
         case '+':
-            return +num1 + +num2;
+            return Number(num1) + Number(num2);
             break;
         case '-':
             return num1-num2;
