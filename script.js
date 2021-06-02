@@ -23,7 +23,7 @@ function take_input(val)
     else{
         input_variables+=val;
     }
-    document.getElementById('show').innerText+=+val;
+    document.getElementById('show').innerText+=val;
 }
 
 
