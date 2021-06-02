@@ -1,0 +1,17 @@
+input[type="button"] { 
+    color:#050; 
+    width: 50px;
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+    background-color:#fed; 
+    border:1px solid; 
+    border-color: #696 #363 #363 #696; 
+} 
+.btn {
+    color:#050; 
+    width: 50px;
+    font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+    background-color:#fed; 
+    border:1px solid; 
+    font-size: 20px;
+    border-color: #696 #363 #363 #696; 
+}
