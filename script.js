@@ -44,7 +44,9 @@ function parseNum(val){
             num1= val.substr(0,i-1);
             op=str[i];
             num2=val.substr(i+1,val.length());
+            console.log(num1," ", num2," ",op," ", answer);
             answer=calculate(num1,num2,op);
+            console.log(answer);
             break;
         }
     }        
