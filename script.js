@@ -1,4 +1,3 @@
-
 var input_variables="";
 var num1;
 var num2;
