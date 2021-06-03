@@ -49,7 +49,7 @@ function parseNum(val){
             break;
         }
     }        
-};
+}
 
 function result(){
     parseNum(input_variables);
