@@ -37,7 +37,7 @@ function calculate(num1,num2,op){
 
 function parseNum(val){
     
-    ops=['+','-','*','/'];
+    ops=["+","-","*","/"];
     for(j=0;j=ops.length()-1;j++){
         if(val.indexOf(p)!=-1){
             i=val.indexOf('+');
