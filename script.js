@@ -43,7 +43,7 @@ function parseNum(val){
         if(val.indexOf(p)!=-1){
             i=val.indexOf(p);
             num1= val.substr(0,i);
-            op=str[i];
+            op=val[i];
             num2=val.substr(i+1,val.length);
             console.log(num1," ", num2," ",op," ", answer);
             answer=calculate(num1,num2,op);
