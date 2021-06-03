@@ -46,7 +46,6 @@ function parseNum(val){
             op=str[i];
             num2=val.substr(i+1,val.length());
             answer=calculate(num1,num2,op);
-        }
             break;
         }
     }        
