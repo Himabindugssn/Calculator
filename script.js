@@ -3,7 +3,7 @@ var input_variables="";
 var num1;
 var num2;
 var op;
-
+var answer;
 //  function to take input values from a button 
 function take_input(val)
 {
@@ -45,6 +45,8 @@ function parseNum(val){
             num1= val.substr(0,i-1);
             op=str[i];
             num2=val.substr(i+1,val.length());
+            answer=calculate(num1,num2,op);
+        }
             break;
         }
     }        
@@ -52,13 +54,12 @@ function parseNum(val){
 
 function result(){
     parseNum(input_variables);
-    document.getElementById("output").innerText=calculate(num1,num2,op);
-}
+    document.getElementById("output").innerText=
 
 function refresh(){
     document.getElementById("output").innerText= "";
     input_variables="";
-    document.getElementById("show").innerText= "";
+    document.getElementById("show").innerText= answer;
 
 }
 
