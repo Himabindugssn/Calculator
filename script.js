@@ -7,6 +7,7 @@ var answer;
 function take_input(val)
 {
     input_variables+=val;
+    console.log(input_variables);
     document.getElementById('show').innerText=input_variables;
 }
 
