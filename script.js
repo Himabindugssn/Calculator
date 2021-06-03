@@ -39,6 +39,7 @@ function parseNum(val){
     
     ops=["+","-","*","/"];
     for(j=0;j=ops.length()-1;j++){
+        p=ops[j];
         if(val.indexOf(p)!=-1){
             i=val.indexOf('+');
             num1= val.substr(0,i-1);
