@@ -62,8 +62,8 @@ function refresh(){
 }
 
 function remove(){
-    input_variables.slice(0,-1);
-    let txt = document.getElementById("show").innerText
-    document.getElementById("show").innerText= txt.slice(0,-1);
+    input_variables=input_variables.slice(0,-1);
+    //let txt = document.getElementById("show").innerText
+    document.getElementById("show").innerText= input_variables;
 
 }
