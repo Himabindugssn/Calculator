@@ -53,17 +53,16 @@ function parseNum(val){
 function result(){
     parseNum(input_variables);
     document.getElementById("output").innerText= answer;
+}
 
 function refresh(){
     document.getElementById("output").innerText= "";
     input_variables="";
     document.getElementById("show").innerText= "";
-
 }
 
 function remove(){
     input_variables=input_variables.slice(0,-1);
     //let txt = document.getElementById("show").innerText
     document.getElementById("show").innerText= input_variables;
-
 }
