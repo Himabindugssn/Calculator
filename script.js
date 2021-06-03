@@ -54,12 +54,12 @@ function parseNum(val){
 
 function result(){
     parseNum(input_variables);
-    document.getElementById("output").innerText=
+    document.getElementById("output").innerText= answer;
 
 function refresh(){
     document.getElementById("output").innerText= "";
     input_variables="";
-    document.getElementById("show").innerText= answer;
+    document.getElementById("show").innerText= "";
 
 }
 
