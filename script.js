@@ -37,13 +37,13 @@ function calculate(num1,num2,op){
 function parseNum(val){
     
     ops=["+","-","*","/"];
-    for(j=0;j=ops.length;j++){
+    for(j=0;j=4;j++){
         p=ops[j];
         if(val.indexOf(p)!=-1){
             i=val.indexOf(p);
-            num1= val.substr(0,i-1);
+            num1= val.substr(0,i);
             op=str[i];
-            num2=val.substr(i+1,val.length());
+            num2=val.substr(i+1,val.length);
             console.log(num1," ", num2," ",op," ", answer);
             answer=calculate(num1,num2,op);
             console.log(answer);
