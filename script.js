@@ -1,22 +1,12 @@
 
 var input_variables="";
-var num1="";
-var num2="";
+var num1;
+var num2;
 var op;
 
 //  function to take input values from a button 
 function take_input(val)
 {
-    if(val=='+' || val=='-' || val=='*' || val=='/'){
-       num1=Number(input_variables);
-       op=val;
-       console.log(op);
-       console.log(num1);
-    }
-    else{
-        num2+=val;
-        console.log(num2);
-    }
     input_variables+=val;
     document.getElementById('show').innerText=input_variables;
 }
@@ -45,8 +35,22 @@ function calculate(num1,num2,op){
     }
 }
 
+function parseNum(val){
+    
+    ops=['+','-','*','/'];
+    for(j=0;j=ops.length()-1;j++){
+        if(val.indexOf(p)!=-1){
+            i=val.indexOf('+');
+            num1= val.substr(0,i-1);
+            op=str[i];
+            num2=val.substr(i+1,val.length());
+            break;
+        }
+    }        
+};
 
 function result(){
+    parseNum(input_variables);
     document.getElementById("output").innerText=calculate(num1,num2,op);
 }
 
