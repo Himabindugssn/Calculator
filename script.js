@@ -41,7 +41,7 @@ function parseNum(val){
     for(j=0;j=ops.length();j++){
         p=ops[j];
         if(val.indexOf(p)!=-1){
-            i=val.indexOf('+');
+            i=val.indexOf(p);
             num1= val.substr(0,i-1);
             op=str[i];
             num2=val.substr(i+1,val.length());
